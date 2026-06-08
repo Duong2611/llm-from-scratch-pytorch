@@ -115,7 +115,7 @@ class BPETokenizer:
         tok.merges = data["merges"]
         tok.vocab  = data["vocab"]
         tok._encoder = {v: k for k, v in tok.vocab.items()}
-        print(f"Tokenizer loaded ← {path}  (vocab_size={tok.vocab_size})")
+        print(f"Tokenizer loaded <- {path}  (vocab_size={tok.vocab_size})")
         return tok
 
     # ── Helpers nội bộ ───────────────────────
